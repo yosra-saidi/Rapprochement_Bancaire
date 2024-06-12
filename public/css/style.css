@@ -1,0 +1,19 @@
+/* public/css/styles.css */
+.navbar-custom {
+    background-color: #ADD8E6; /* Couleur bleu clair */
+}
+.nav-link-about-us {
+    color: #ff6347; /* Couleur rouge tomate */
+}
+.nav-link-register {
+    color: #32cd32; /* Couleur vert lime */
+}
+.nav-link-login {
+    color: #1e90ff; /* Couleur bleu dodger */
+}
+/* Changer la couleur des liens au survol */
+.nav-link-about-us:hover,
+.nav-link-register:hover,
+.nav-link-login:hover {
+    color: #000; /* Noir au survol */
+}

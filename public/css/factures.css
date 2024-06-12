@@ -1,0 +1,72 @@
+/* public/css/factures.css */
+
+.table-factures {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-factures th, .table-factures td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-factures th {
+    background-color: #87CEEB; /* Bleu ciel */
+    color: white;
+    font-weight: bold;
+}
+
+.table-factures td.actions {
+    text-align: center;
+}
+
+.table-factures td.actions a, .table-factures td.actions form {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.table-factures .btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.table-factures .btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.table-factures .btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.table-factures .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.title {
+    color: #87CEEB; /* Bleu ciel */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.btn-add-facture {
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add-facture:hover {
+    background-color: #87CEEB; 
+}
