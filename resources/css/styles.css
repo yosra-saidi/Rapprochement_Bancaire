@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Styles pour le header */
+.header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.header .topbar {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+}
+
+.header .top-link {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header .top-link li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .top-link li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .top-contact {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: right;
+}
+
+.header .top-contact li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.header .top-contact li i {
+    margin-right: 5px;
+}
+
+/* Styles pour la navigation */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}

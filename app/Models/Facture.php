@@ -9,7 +9,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 class Facture extends Model
 {
-    protected $fillable = ['numero_facture', 'montant'];
+    protected $fillable = ['numero_facture', 'montant','status'];
 
     public function up()
     {
@@ -17,6 +17,7 @@ class Facture extends Model
             $table->id();
             $table->string('numero_facture');
             $table->decimal('montant', 8, 2);
+            $table->string('status');
             $table->timestamps();
         });
     }

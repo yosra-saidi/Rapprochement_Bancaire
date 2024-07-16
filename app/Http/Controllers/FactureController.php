@@ -121,27 +121,18 @@ class FactureController extends Controller
             'message' => $result
         ]);
     }
-    // upload du facture
     public function store(Request $request)
     {
-        $request->validate([
-            'numero_facture' => 'required|string|max:255',
-            'montant' => 'required|numeric',
-            'invoice_file' => 'required|file|mimes:pdf,jpg,png|max:2048',
-        ]);
-
-        $filePath = null;
-        if ($request->hasFile('invoice_file')) {
-            $filePath = $request->file('invoice_file')->store('factures', 'public');
-        }
-
         $facture = new Facture();
-        $facture->numero_facture = $request->input('numero_facture');
-        $facture->montant = $request->input('montant');
-        $facture->file_path = $filePath;
+        $facture->numero_facture = $request->numero_facture;
+        $facture->montant = $request->montant;
+        $facture->client_id = $request->client_id;
+        $facture->status = $request->status;
+        $facture->date = $request->date; // Assurez-vous que $request->date contient une valeur valide
+    
         $facture->save();
-
-        return redirect()->route('factures.index')->with('success', 'Facture ajoutée avec succès.');
+    
+        return response()->json($facture, 201);
     }
 
     
